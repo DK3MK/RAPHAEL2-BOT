@@ -21,7 +21,5 @@ m.reply('خطأ: تحقق من الرابط أو حاول رابط آخر')
 handler.help = ['gdrive']
 handler.tags = ['dl', 'prem']
 handler.command = ['gdrive']
-handler.diamond = true
-handler.premium = true
 // Done
 export default handler
