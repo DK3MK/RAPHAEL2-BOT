@@ -39,6 +39,5 @@ switch (type) {
 handler.help = ['lightglow', 'layer', 'aglow', 'diamond']
 handler.tags = ['maker']
 handler.command = /^(lightglow|layer|aglow|diamond)$/i
-handler.diamond = true
 
 export default handler
