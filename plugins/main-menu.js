@@ -63,8 +63,12 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ┆التاريخ: *${date}*
 ┗─────────────────⬣
 ┆──────────────┈ ⳹
+┆اكتب */list-ar* لعرض
+┆مع الشرح
+┆
 ┆اكتب */list* لعرض
-┆جميع الأوامر
+┆بدون الشرح
+┆*جميع الأوامر*
 ┗─────────────────⬣`
 
   conn.sendFile(m.chat, pp, './Guru.jpg', str, m, false, { mentions: [who] })
