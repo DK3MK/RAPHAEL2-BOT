@@ -35,6 +35,5 @@ switch (type) {
 handler.help = ['neon', 'devil', 'phlogo']
 handler.tags = ['maker']
 handler.command = /^(neon|devil|phlogo)$/i
-handler.diamond = true
 
 export default handler
