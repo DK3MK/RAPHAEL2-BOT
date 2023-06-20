@@ -36,7 +36,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *┣⌯* ${usedPrefix}demote *<@Tag>*
 *┣⌯* ${usedPrefix}warn *<@Tag>*
 *┣⌯* ${usedPrefix}unwarn *<@Tag>*
-*┣⌯* ${usedPrefix}del *<Msg>*
+*┣⌯* ${usedPrefix}del *<Reply Msg>*
 *┣⌯* ${usedPrefix}invite *<Number>*
 *┣⌯* ${usedPrefix}group *<close/open>*
 *┣⌯* ${usedPrefix}tagadmins
