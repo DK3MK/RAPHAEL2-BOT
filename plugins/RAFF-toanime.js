@@ -27,7 +27,6 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
 handler.help = ["toanime"];
 handler.tags = ["tools"];
-handler.diamond = true;
 handler.command = /^(imganime|toanime)$/i;
 
 export default handler;
