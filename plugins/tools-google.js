@@ -28,6 +28,5 @@ let handler = async (m, { conn, command, args }) => {
 handler.help = ['google']
 handler.tags = ['tools']
 handler.command = ['google'] 
-handler.diamond = true
 
 export default handler
