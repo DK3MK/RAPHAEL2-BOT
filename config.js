@@ -47,7 +47,7 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.ownername = '𝖽𝖺𝗋𝗄 𝗆𝖺𝗇'
 global.botname = 'ℝ𝔸ℙℍ𝔸𝔼𝕃'
-global.premium = 'true'
+global.premium = 'false'
 global.packname = 'ℝ𝔸ℙℍ𝔸𝔼𝕃 ┃ ＢＯＴ ²⁰²³'
 global.author = 'ℝ𝔸ℙℍ𝔸𝔼𝕃'
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/aboud_coding\n' 
