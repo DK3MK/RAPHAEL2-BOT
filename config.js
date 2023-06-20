@@ -50,14 +50,14 @@ global.botname = 'ℝ𝔸ℙℍ𝔸𝔼𝕃'
 global.premium = 'false'
 global.packname = 'ℝ𝔸ℙℍ𝔸𝔼𝕃 ┃ ＢＯＴ ²⁰²³'
 global.author = 'ℝ𝔸ℙℍ𝔸𝔼𝕃'
-global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/aboud_coding\n' 
+global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/aboud_coding\n'
 global.dygp = 'https://chat.whatsapp.com'
 global.fgsc = 'https://github.com/Dark-Man747/RAPHAEL-BOT' 
 global.fgyt = 'https://youtube.com/@9TL'
 global.fgpyp = 'https://youtube.com/@9TL'
 global.fglog = 'https://raw.githubusercontent.com/Guru322/api/Guru/guru.jpg'
 global.dbase = 'mongodb+srv://action20005:@123456aa@bot-whatsapp.3owz610.mongodb.net/?retryWrites=true&w=majority' //ADD YOUR MONGODB BY CHANGIMG IT
-
+//mongodb+srv://action20005:@123456aa@bot-whatsapp.3owz610.mongodb.net/?retryWrites=true&w=majority
 global.wait = '*جارٍ التحميل، يرجى الانتظار....*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
