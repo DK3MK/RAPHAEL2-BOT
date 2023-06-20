@@ -16,7 +16,7 @@ await conn.sendFile(m.chat, result.data, 'Error.jpg', `*لك هذا!!*\n*الت�
 }
 handler.help = ['logos']
 handler.tags = ['logo']
-handler.command = /^(logo|logos)$/i
+handler.command = ['logo','logos']
 export default handler
 
 import formData from 'form-data'
