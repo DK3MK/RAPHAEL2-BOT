@@ -1,5 +1,5 @@
 export async function all(m, conn ) {
-// عندما يرسل شخص ما رابط مجموعة إلى رسائل الخاصة للبوت
+// عندما يرسل شخص ما رابط مجموعة إلى رسائل الخاصة للبوت/
 if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('open this link')) && !m.isBaileys && !m.isGroup) {
 
 conn.reply(m.chat,`*دعوة البوت للانضمام إلى مجموعة*
