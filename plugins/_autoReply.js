@@ -2,7 +2,7 @@ export async function all(m) {
 // عندما يرسل شخص ما رابط مجموعة إلى رسائل الخاصة للبوت/
 if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('open this link')) && !m.isBaileys && !m.isGroup) {
 
-reply(m.chat,`*دعوة البوت للانضمام إلى مجموعة*
+m.reply(m.chat,`*دعوة البوت للانضمام إلى مجموعة*
 
 مرحبًا @${m.sender.split('@')[0]}
 يمكنك استئجار البوت للانضمام إلى مجموعة أو التواصل مع المالك
