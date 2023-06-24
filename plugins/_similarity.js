@@ -11,10 +11,10 @@ export async function before(m, { conn, match, usedPrefix, command }) {
     let sim = similarity(noPrefix, mean)
     let som = sim * 100
     m.reply(`
-ربما كنت تقصد:
+*ربما كنت تقصد:*
 
-இ ${usedPrefix + mean}
-இ التشابه: ${parseInt(som)}%`)
+▢ ${usedPrefix + mean}
+▢ التشابه: *_${parseInt(som)}%_*`)
   }
 }
 
