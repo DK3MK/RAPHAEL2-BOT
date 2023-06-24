@@ -8,8 +8,6 @@ import moment from 'moment-timezone'
 import { promises } from 'fs'
 import { join } from 'path'
 
-const time = moment.tz('Asia/Muscat').format('HH A')
-let wib = moment.tz('Asia/Muscat').format('hh:mm:ss A')
 
 let handler = async (m, { conn, usedPrefix, command }) => {
   let d = new Date(new Date() + 3600000)
@@ -35,7 +33,10 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let more = String.fromCharCode(8206)
   let readMore = more.repeat(850)
   let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-
+// الوقت بعُمان
+  const time = moment.tz('Asia/Muscat').format('HH A')
+  let wib = moment.tz('Asia/Muscat').format('hh:mm:ss A')
+  
   let str = `
 ┏─────────────────⬣
 ┆ 𝑯𝒂𝒊, ${name}
