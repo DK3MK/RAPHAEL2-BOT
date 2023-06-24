@@ -1,9 +1,9 @@
 import didyoumean from 'didyoumean'
 import similarity from 'similarity'
-//import { plugins } from '../lib/plugins.js'
 
 export async function before(m, { conn, match, usedPrefix, command }) {
   if ((usedPrefix = (match[0] || '')[0])) {
+    if (!m.text) return
     let noPrefix = m.text.replace(usedPrefix, '')
     let args = noPrefix.trim().split` `.slice(1)
     let text = args.join` `
