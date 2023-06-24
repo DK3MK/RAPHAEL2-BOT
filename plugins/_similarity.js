@@ -22,7 +22,7 @@ let caption = `
 
 இ ${usedPrefix + mean}
 இ التشابه: ${parseInt(som)}%`
-if (mean) this.sendButton(m.chat, caption, igfg, null, [['✅ نعم',`ok`], ['❎ لا', 'OK']], m, { mentions: [who] })
+if (mean) this.sendMessage(m.chat, caption, igfg, null, [], m, { mentions: [who] })
 }
 }
 
