@@ -15,17 +15,11 @@ export async function before(m, { conn, match, usedPrefix, command }) {
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let name = await conn.getName(who)
     let caption = `
-🧿 مرحبًا @${who.split("@")[0]}
-
 ربما كنت تقصد:
 
 இ ${usedPrefix + mean}
 இ التشابه: ${parseInt(som)}%`
-    if (mean) {
-      this.sendMessage(m.chat, caption, 'conversation', {
-        mentions: [who]
-      })
-    }
+    if (mean) {this.sendMessage(m.chat, caption)}
   }
 }
 
