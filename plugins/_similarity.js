@@ -10,12 +10,11 @@ export async function before(m, { conn, match, usedPrefix, command }) {
     let mean = didyoumean(noPrefix, help)
     let sim = similarity(noPrefix, mean)
     let som = sim * 100
-    m.reply(`
-*ربما كنت تقصد:*
+    if (mean) {
+    m.reply(`*ربما كنت تقصد:*
 
 ▢ ${usedPrefix + mean}
 ▢ التشابه: *_${parseInt(som)}%_*`)
-  }
-}
+  }}}
 
 export const disabled = false
