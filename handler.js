@@ -777,6 +777,7 @@ export async function deleteUpdate(message) {
 }
 
 global.dfail = (type, m, conn) => {
+
     let msg = {
         rowner: '*فقط المطور* • يمكن استخدام هذا الأمر فقط من قبل *مُنشئ البوت*',
         owner: '*فقط المالك* • يمكن استخدام هذا الأمر فقط من قبل *مالك البوت*',
@@ -790,7 +791,8 @@ global.dfail = (type, m, conn) => {
         restrict: '*القيود معطلة* • هذه الميزة *معطلة*',
     }
     [type]
-    if (msg) return m.reply(m.chat, msg)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
+    let imgerror = 'https://telegra.ph/file/56280c4e7e245b6ccb2db.jpg'
+    if (msg) return conn.sendFile(m.chat, imgerror, msg, igfg, null, false, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
 	
 }
 
