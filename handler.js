@@ -779,7 +779,7 @@ export async function deleteUpdate(message) {
 global.dfail = (type, m, conn) => {
 
     let msg = {
-        rowner: '*فقط المطور* • يمكن استخدام هذا الأمر فقط من قبل *مُنشئ البوت*',
+        rowner: '*فقط المالك* • يمكن استخدام هذا الأمر فقط من قبل *مالك البوت*',
         owner: '*فقط المالك* • يمكن استخدام هذا الأمر فقط من قبل *مالك البوت*',
         mods: '*فقط المشرفين* • هذه الوظيفة مخصصة فقط لـ *مشرفي البوت*',
         premium: '*فقط للمشتركين المميزين* • يمكن استخدام هذا الأمر فقط من قبل *أعضاء مميزين*',
@@ -792,8 +792,7 @@ global.dfail = (type, m, conn) => {
     }
     [type]
     let imgerror = 'https://telegra.ph/file/56280c4e7e245b6ccb2db.jpg'
-    if (msg) return conn.sendFile(m.chat, imgerror, 'imgerror.jpg', msg, null, false, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
-	
+    if (msg) return conn.sendFile(m.chat, imgerror, 'imgerror.jpg', msg, null, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
 }
 
 let file = global.__filename(import.meta.url, true)
