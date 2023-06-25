@@ -678,8 +678,8 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://i.imgur.com/8B4jwGq.jpeg'
-                    let ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'
+                    let pp = 'https://telegra.ph/file/54556189bc67a54ab4de5.jpg'
+                    let ppgp = 'https://telegra.ph/file/54556189bc67a54ab4de5.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                         ppgp = await this.profilePictureUrl(id, 'image')
@@ -693,7 +693,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.imgur.com/bbWbASn.jpg'
+                                background: 'https://telegra.ph/file/54556189bc67a54ab4de5.jpg'
                             }, 'apikey')
 
                             let lea = API('fgmods', '/api/goodbye', {
@@ -702,12 +702,9 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.imgur.com/klTSO3d.jpg'
+                                background: 'https://telegra.ph/file/54556189bc67a54ab4de5.jpg'
                             }, 'apikey')
                             this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
-                            /*this.sendButton(id, text, igfg, action === 'add' ? wel : lea, [
-                             //[(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : '')], 
-                             //[(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})*/
 
                     }
                 }
@@ -793,7 +790,7 @@ global.dfail = (type, m, conn) => {
         restrict: '*القيود معطلة* • هذه الميزة *معطلة*',
     }
     [type]
-    if (msg) return conn.sendMessage(m.chat, msg, igfg, null, false, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
+    if (msg) return m.reply(m.chat, `${msg}`, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
 	
 }
 
