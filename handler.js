@@ -704,10 +704,10 @@ export async function participantsUpdate({ id, participants, action }) {
                                 profile: pp,
                                 background: 'https://i.imgur.com/klTSO3d.jpg'
                             }, 'apikey')
-                            // this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
-                            this.sendButton(id, text, igfg, action === 'add' ? wel : lea, [
-                             [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : '')], 
-                             [(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})
+                            this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
+                            /*this.sendButton(id, text, igfg, action === 'add' ? wel : lea, [
+                             //[(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : '')], 
+                             //[(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})*/
 
                     }
                 }
@@ -772,7 +772,7 @@ export async function deleteUpdate(message) {
 *.enable delete*
 `.trim(), msg, {
         mentions: [participant]
-            });            
+            });
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)
@@ -793,7 +793,8 @@ global.dfail = (type, m, conn) => {
         restrict: '*القيود معطلة* • هذه الميزة *معطلة*',
     }
     [type]
-    if (msg) return conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
+    if (msg) return conn.sendMessage(m.chat, msg, igfg, null, false, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
+	
 }
 
 let file = global.__filename(import.meta.url, true)
