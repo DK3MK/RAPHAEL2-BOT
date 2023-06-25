@@ -790,7 +790,7 @@ global.dfail = (type, m, conn) => {
         restrict: '*القيود معطلة* • هذه الميزة *معطلة*',
     }
     [type]
-    if (msg) return m.reply(m.chat, `${msg}`, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
+    if (msg) return m.reply(m.chat, msg)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
 	
 }
 
