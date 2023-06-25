@@ -792,7 +792,7 @@ global.dfail = (type, m, conn) => {
     }
     [type]
     let imgerror = 'https://telegra.ph/file/56280c4e7e245b6ccb2db.jpg'
-    if (msg) return conn.sendFile(m.chat, imgerror, 'imgerror.jpg', msg, null, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
+    if (msg) return conn.sendFile(m.chat, imgerror, 'imgerror.jpg', msg, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
 }
 
 let file = global.__filename(import.meta.url, true)
