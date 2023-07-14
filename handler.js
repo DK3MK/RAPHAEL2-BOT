@@ -678,8 +678,8 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://telegra.ph/file/af2fde7b94fe5367b549a.jpg'
-                    let ppgp = 'https://telegra.ph/file/af2fde7b94fe5367b549a.jpg'
+                    let pp = 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
+                    let ppgp = 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                         ppgp = await this.profilePictureUrl(id, 'image')
@@ -693,7 +693,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://telegra.ph/file/af2fde7b94fe5367b549a.jpg'
+                                background: 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
                             }, 'apikey')
 
                             let lea = API('fgmods', '/api/goodbye', {
@@ -702,7 +702,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://telegra.ph/file/af2fde7b94fe5367b549a.jpg'
+                                background: 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
                             }, 'apikey')
                             this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
 
@@ -791,7 +791,7 @@ global.dfail = (type, m, conn) => {
         restrict: '*القيود معطلة* • هذه الميزة *معطلة*',
     }
     [type]
-    let imgerror = 'https://telegra.ph/file/a08ab86fbfe1db686cbd6.mp4'
+    let imgerror = 'https://telegra.ph/file/56280c4e7e245b6ccb2db.jpg'
     if (msg) return conn.sendFile(m.chat, imgerror, 'imgerror.mp4', msg, m)//conn.sendButton(m.chat, msg, igfg, null, [['🔖 OK', 'huh'], ['⦙☰ Menu', '/menu'] ], m)
 }
 
