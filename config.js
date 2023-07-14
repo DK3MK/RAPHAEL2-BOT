@@ -10,8 +10,8 @@ global.owner = [
   ['96894116692', '𝖽𝖺𝗋𝗄 𝗆𝖺𝗇', true],
 ] //Number of owners
 
-global.mods = ['96894116692','989233823465'] 
-global.prems = ['96894116692', '989233823465']
+global.mods = ['96894116692'] 
+global.prems = ['96894116692']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
@@ -49,7 +49,7 @@ global.ownername = '𝖽𝖺𝗋𝗄 𝗆𝖺𝗇'
 global.botname = 'ℝ𝔸ℙℍ𝔸𝔼𝕃'
 global.premium = 'false'
 global.packname = 'ℝ𝔸ℙℍ𝔸𝔼𝕃 ┃ ＢＯＴ ²⁰²³'
-global.author = 'ℝ𝔸ℙℍ𝔸𝔼𝕃'
+global.author = '𝖽𝖺𝗋𝗄 𝗆𝖺𝗇'
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/aboud_coding\n'
 global.dygp = 'https://chat.whatsapp.com'
 global.fgsc = 'https://github.com/Dark-Man747/RAPHAEL-BOT' 
