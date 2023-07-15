@@ -11,7 +11,6 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *『❦↜╎.لمنشن』*
 *『❦↜╎.مخفي』*
 *『❦↜╎.الاداره』*
-*『❦↜╎.الاصنام』*
 *『❦↜╎.طرد』*
 *『❦↜╎.ترقيه』*
 *『❦↜╎.خفض』*
