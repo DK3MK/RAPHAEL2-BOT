@@ -1,6 +1,6 @@
 import { googleImage } from  '@bochilteam/scraper' 
 var handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `Use example ${usedPrefix}${command} Minecraft`
+    if (!text) throw `للإستخدام *مثال*: ${usedPrefix}${command} dark man`
     const res = await googleImage(text)
     let image = res.getRandom()
     let link = image
