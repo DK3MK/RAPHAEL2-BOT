@@ -1,12 +1,12 @@
 import fetch from 'node-fetch';
 import translate from '@vitalets/google-translate-api';
 
-let quranSurahHandler = async (m, { conn }) => {
+let quranSurahHandler = async (m, { conn, usedPrefix, command }) => {
   try {
     let surahInput = m.text.split(' ')[1];
 
     if (!surahInput) {
-      throw new Error(`يرجى تحديد رقم السورة\n *{usedPrefix + command}* 1`);
+      throw new Error(`يرجى تحديد رقم السورة\n\n    *${usedPrefix + command}* 1`);
     }
 
     let surahListRes = await fetch('https://quran-endpoint.vercel.app/quran');
@@ -50,7 +50,7 @@ ${translatedTafsirar.text}`;
     }
   } catch (error) {
     console.error(error);
-    m.reply(`Error: ${error.message}`);
+    m.reply(`خطأ: ${error.message}`);
   }
 };
 
