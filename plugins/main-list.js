@@ -1,4 +1,4 @@
-const imglist = 'https://telegra.ph/file/5e2055ef06390b1e14b63.jpg'
+const imglist = 'https://telegra.ph/file/8bd4816b5ed78b2da5bc5.jpg'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => conn.sendFile(m.chat, imglist, 'darkman.jpg', `
 ❆╼━━❆ •﹝📜﹞• ❆━━╾❆
 
@@ -7,7 +7,6 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *• ∙ ∙━━╍━﹝🌀﹞━╍━━∙ ∙ •*
 *˼‏👑˹ قـسـم الـمـجـمـوعـات╿↶*
 *⋄━───═◞⬪⋇⬪◟═───━⋄*
-*『❦↜╎.قران』*
 *『❦↜╎.منشن』*
 *『❦↜╎.لمنشن』*
 *『❦↜╎.مخفي』*
