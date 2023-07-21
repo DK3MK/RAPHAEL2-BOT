@@ -181,6 +181,6 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 `.trim(), m)
 handler.help = ['allmenu']
 handler.tags = ['main']
-handler.command = ['list', 'allmenu','المهام','المهمات','ليست','مهام'] 
+handler.command = ['المساعده','المساعدة','مساعدة','مساعده'] 
 
 export default handler
