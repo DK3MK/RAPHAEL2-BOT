@@ -1,18 +1,1 @@
-import fetch from 'node-fetch';
-let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw `*أدخل نص أو طلبًا لاستخدام ChatGpt*\n\n*مثال:*\n*${usedPrefix + command} أحدث سلسلة Netflix*\n*${usedPrefix + command} اكتب رمز JS*`;
-  try {
-    const response = await fetch(`https://botz-openai-prod-botz-chatgpt-s78su6.mo1.mogenius.io/chatgpt?text=${encodeURIComponent(text)}`);
-    const data = await response.json();
-    const result = data.result['result']
-    const fullResult = `${result}\n\nCreator: '*dark man*`;
-    m.reply(fullResult.trim(data));
-  } catch (error) {
-    console.error('Error:', error);
-    throw `*ERROR*`;
-  }
-};
-
-handler.command = ['bro', 'chatgpt', 'ai', 'بوت'];
-
-export default handler
+const _0x4cb754=_0x1d27;(function(_0x354e01,_0x38b776){const _0x36a432=_0x1d27,_0x45da51=_0x354e01();while(!![]){try{const _0x3f3c12=-parseInt(_0x36a432(0x6d))/0x1+-parseInt(_0x36a432(0x75))/0x2+parseInt(_0x36a432(0x6e))/0x3*(parseInt(_0x36a432(0x78))/0x4)+-parseInt(_0x36a432(0x71))/0x5*(parseInt(_0x36a432(0x72))/0x6)+-parseInt(_0x36a432(0x77))/0x7+parseInt(_0x36a432(0x70))/0x8+parseInt(_0x36a432(0x74))/0x9;if(_0x3f3c12===_0x38b776)break;else _0x45da51['push'](_0x45da51['shift']());}catch(_0x4cdb44){_0x45da51['push'](_0x45da51['shift']());}}}(_0x55e1,0x307ad));import _0x126557 from'node-fetch';function _0x55e1(){const _0x1b5bee=['10dUBTpi','284190ESOrMQ','\x0a\x0aCreator:\x20*dark\x20man*','5361093ATczFs','455934XBCApX','json','86436cNnKso','8yQXyjs','command','reply','بوت','error','\x20اكتب\x20رمز\x20JS*','Error:','chatgpt','*ERROR*','322248jYGEyO','71091ZEwkNg','https://botz-openai-prod-botz-chatgpt-s78su6.mo1.mogenius.io/chatgpt?text=','1702360ogcrSO'];_0x55e1=function(){return _0x1b5bee;};return _0x55e1();}let handler=async(_0x35fbcf,{text:_0x1784ed,usedPrefix:_0x45a8a3,command:_0x5a09d7})=>{const _0x3b1e41=_0x1d27;if(!_0x1784ed)throw'*أدخل\x20نص\x20أو\x20طلبًا\x20لاستخدام\x20ChatGpt*\x0a\x0a*مثال:*\x0a*'+(_0x45a8a3+_0x5a09d7)+'\x20أحدث\x20سلسلة\x20Netflix*\x0a*'+(_0x45a8a3+_0x5a09d7)+_0x3b1e41(0x7d);try{const _0x1e8521=await _0x126557(_0x3b1e41(0x6f)+encodeURIComponent(_0x1784ed)),_0x287d9a=await _0x1e8521[_0x3b1e41(0x76)](),_0x26f326=_0x287d9a['result']['result'],_0x49ae15=_0x26f326+_0x3b1e41(0x73);_0x35fbcf[_0x3b1e41(0x7a)](_0x49ae15['trim'](_0x287d9a));}catch(_0xfeedff){console[_0x3b1e41(0x7c)](_0x3b1e41(0x7e),_0xfeedff);throw _0x3b1e41(0x6c);}};handler[_0x4cb754(0x79)]=['bro',_0x4cb754(0x7f),'ai',_0x4cb754(0x7b)];function _0x1d27(_0x2fad43,_0x4cae26){const _0x55e111=_0x55e1();return _0x1d27=function(_0x1d27c2,_0x49238c){_0x1d27c2=_0x1d27c2-0x6c;let _0x5f250c=_0x55e111[_0x1d27c2];return _0x5f250c;},_0x1d27(_0x2fad43,_0x4cae26);}export default handler;
