@@ -1,7 +1,29 @@
 {
-  "name": "RAPHAEL-BOT",
-  "description": "Customizable WhatsApp Bot",
-  "repository": "https://github.com/Dark-Man747/RAPHAEL-BOT",
-  "logo": "https://i.imgur.com/gEj1qC6.jpeg",
-  "keywords": ["bot", "whatsapp", "whatsapp-bot", "rpg", "RAPHAEL-bot-md", "RAPHAEL-bot"]
+  "name": "whatsapp-bot (RAPHAEL-BOT)",
+  "description": "Whatsapp bot.",
+  "keywords": ["whatsapp bot"],
+  "logo": "https://telegra.ph/file/3694d5edde3846459647b.jpg",
+  "repository": "https://github.com/DK3MK/RAPHAEL-BOT",
+  "stack": "container",
+  "env": {
+     "DK3MK": {
+      "description": "I love you dark man",
+      "required": false,
+      "value": "dk3mk"
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
 }
