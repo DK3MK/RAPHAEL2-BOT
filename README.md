@@ -50,7 +50,7 @@ npm i
 npm start
 ```
 
-### [ To keep BOT-STAR-EMPLRE alive without internet 24/7 (Termux, Vs Code etc. physical deploy only) ]
+### [ To keep RAPHAEL2-BOT alive without internet 24/7 (Termux, Vs Code etc. physical deploy only) ]
 ```
 npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
