@@ -39,6 +39,7 @@
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
+        "firebase-admin": "^12.0.0",
         "google-it": "^1.6.4",
         "@adiwajshing/baileys": "npm:@whiskeysockets/baileys",
         "@adiwajshing/keyed-db": "^0.2.4",
