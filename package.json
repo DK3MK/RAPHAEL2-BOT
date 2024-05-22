@@ -1,6 +1,6 @@
 { 
     "name": "raphael",
-    "version": "1.6.15",
+    "version": "1.0.0",
     "description": "Customizable WhatsApp Bot",
     "main": "index.js",
     "type": "module",
@@ -41,7 +41,7 @@
     "dependencies": {
         "firebase-admin": "^12.0.0",
         "google-it": "^1.6.4",
-        "@adiwajshing/baileys": "npm:@whiskeysockets/baileys",
+        "@whiskeysockets/baileys": "^6.7.2",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper": "github:DK3MK/scraper",
         "@vitalets/google-translate-api": "^8.0.0",
