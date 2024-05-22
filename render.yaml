@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: RAPHAEL-BOT
-    env: docker
-    region: Frankfurt
-    plan: free
